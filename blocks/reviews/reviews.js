@@ -1,7 +1,7 @@
 export default function decorate(block) {
-    const wrapper = document.createElement('div');
+  const wrapper = document.createElement('div');
 
-    const mainWidget = document.createRange().createContextualFragment(`
+  const mainWidget = document.createRange().createContextualFragment(`
     <div
         class="yotpo yotpo-main-widget"
         data-product-id="7656"
@@ -13,6 +13,6 @@ export default function decorate(block) {
         data-currency="GBP">
     </div>
     `);
-    wrapper.append(mainWidget);
-    block.append(wrapper);
+  wrapper.append(mainWidget);
+  block.append(wrapper);
 }
